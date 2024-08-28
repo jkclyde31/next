@@ -7,13 +7,13 @@ const ServicesSection = () => {
     <section className="bg-[url('/img/bgs/bg-services.png')] bg-no-repeat bg-cover bg-center py-16">
       <div className="container mx-auto px-4 max-w-[1720px] w-full">
         {/* Texts */}
-        <div className="mb-12 text-[#1F1F1F]">
-          <h2 className="lg:text-[16px] font-barlow-m mb-[27px] lg:mx-0 ">OUR SERVICE OFFERING</h2>
+        <div className="mb-12 text-[#1F1F1F] ">
+          <h2 className="lg:text-[16px] font-barlow-m mb-[27px] lg:mx-0 text-center md:text-start">OUR SERVICE OFFERING</h2>
           <h1 className="lg:text-[45px] md:text-[35px] sx:text-[30px] text-[25px] font-poppins-m mb-4 lg:leading-[54px]">
             Explore Our Services & Discover How We<br />
             Can <span className="text-black font-poppins-b">Transform Your Dream Project Into Reality</span>
           </h1>
-          <p className="lg:text-[16px] text-[14px]  tracking-[1.6px] font-barlow-m mb-[41px]">
+          <p className="lg:text-[16px] text-[14px]  tracking-[1.6px] font-barlow mb-[41px]">
             We take great pride in providing the highest quality workmanship for our customers. With over 15 years<br />
             in the industry, we have the skills, knowledge, and experience.
           </p>

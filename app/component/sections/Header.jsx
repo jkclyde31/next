@@ -38,7 +38,7 @@ export default function Header() {
             </Link>
             <div className="tablet:text-center tablet:mx-auto txt max-w-[728px]">
                <p className='font-nunito text-[16px] text-[#444] pb-[15px] md:pb-[25px] leading-[120%]'>AT ARIZONA INTERIOR CONSTRUCTION</p>
-               <h1 className='font-poppins-l text-[20px] xs:text=[25px] sm:text-[30px] md:text-3xl lg:text-[40px] pb-[18px] text-[#1F1F1F] leading-[120%]'>
+               <h1 className='font-poppins-l text-[25px] xs:text=[25px] sm:text-[30px] md:text-3xl lg:text-[40px] pb-[18px] text-[#1F1F1F] leading-[120%]'>
 
                 We Take Great Pride in Providing
               <span className='block font-poppins-m'>The Highest Quality Workmanship</span>

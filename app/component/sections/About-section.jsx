@@ -11,7 +11,7 @@ const AboutSection = () => {
           <p className="text-[14px] md:text-[16px] font-barlow-m mb-[20px] md:mb-[25px]">
             KNOW ABOUT US
           </p>
-          <h2 className="text-[30px] md:text-[35px] lg:text-[40px] font-poppins-l leading-tight md:leading-[1] mb-[15px] md:mb-[21px]">
+          <h2 className="text-[25px] md:text-[35px] lg:text-[40px] font-poppins-l leading-tight md:leading-[1] mb-[15px] md:mb-[21px]">
             West Valley Phoenix Custom Cabinet & Countertop Installation
           </h2>
           <p className="text-[16px] md:text-[18px] font-barlow leading-[28px] md:leading-[36px] pb-[40px] md:pb-[53px]">
