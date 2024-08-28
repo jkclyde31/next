@@ -44,7 +44,7 @@ const FAQKitchenSection = () => {
         </div>
         {/* RIGHT */}
         <div className='flex justify-end'>
-          <Image src="/img/faqs/image.png" width={600} height={984} className="w-full max-w-[864px] object-cover " />
+          <Image src="/img/faqs/image.png" width={600} height={984} className="w-[90%]  md:w-full  max-w-[864px] object-cover mx-auto pb-[15px] md:pb-[0px] lg:pb-[0px]" />
         </div>
         
       </div>
