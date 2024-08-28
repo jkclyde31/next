@@ -8,7 +8,6 @@ import Image from 'next/image'
 import PrimaryButton from "./PrimaryButton";
 
 
-
 const navLinks = [
   {
     title: "Home",
@@ -37,7 +36,7 @@ const Navbar = () => {
 
   return (
   <nav className="bg-white sm:bg-white md:bg-transparent lg:bg-transparent mx-auto max-w-[1720px] w-full top-0 left-0 right-0 z-10 bg-opacity-90">
-    <div className="flex container lg:py-4  items-start  justify-between mx-auto pt-[40px] custom-padding ">
+    <div className="flex container lg:py-4  items-start  lg:justify-between md:justify-between justify-end mx-auto pt-[40px] custom-padding ">
         <Link
           href={"/"}
           className="md:pt-[15px] md:pb-[44px] hidden md:block"
@@ -46,7 +45,7 @@ const Navbar = () => {
         </Link>
 
         {/* mobile responsive */}
-        <div className="mobile-menu block md:hidden py-1">
+        <div className="mobile-menu block md:hidden py-1 px-2">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
