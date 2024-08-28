@@ -103,9 +103,18 @@
   min-height: 400px;
   padding-top: 5%;
   padding-bottom: 5%;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .inner #steps{
   display: relative;
   border: 1px solid red;
+}
+
+.inner h1{
+  font-size: 35px;
+  margin: 0 auto;
+  text-align: center;
 }

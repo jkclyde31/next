@@ -16,7 +16,27 @@ Builder.registerComponent(Counter, {
 });
 
 Builder.registerComponent(PrimaryButton, {
-  name: "PrimaryButton",
+  name: 'Primary Button',
+  inputs: [
+    {
+      name: 'text',
+      type: 'string',
+      defaultValue: 'Click me',
+    },
+    {
+      name: 'width',
+      type: 'string',
+      defaultValue: '200px',
+    },
+    {
+      name: 'className',
+      type: 'string',
+    },
+    {
+      name: 'customStyles',
+      type: 'object',
+    },
+  ],
 });
 
 Builder.registerComponent(MyFunComponent, {
