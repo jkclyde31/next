@@ -22,7 +22,7 @@ const FAQKitchenSection = () => {
             "Do I need to hire a professional for countertop installation or can I do it myself?"
           ].map((question, index) => (
             <div key={index} className="flex justify-between items-center border-b ">
-              <p className="text-[18px] font-barlow leading-[45px]">{question}</p>
+              <p className="text-[14px] sx:text-[18px] font-barlow leading-[21px] md:leading-[45px]">{question}</p>
               <ChevronDown size={20} />
             </div>
           ))}

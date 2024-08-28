@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="text-[#444444]" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center">
         {/* Text Content (now on the left) */}
-        <div className="mt-4 md:mt-0 flex flex-col justify-center h-full w-full max-w-[693px] px-4 pt-[2%] md:pt-[20%] text-center md:text-start order-1 md:order-2">
+        <div className="mt-4 md:mt-0 flex flex-col justify-center mx-auto lg:mx-0 h-full w-full max-w-[693px] px-4 pt-[2%] md:pt-[20%] text-center md:text-start order-1 md:order-2">
           <p className="text-[14px] md:text-[16px] font-barlow-m mb-[20px] md:mb-[25px]">
             KNOW ABOUT US
           </p>
