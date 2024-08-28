@@ -13,8 +13,8 @@ const FAQKitchenSection = () => {
 
       {/* LEFT */}
        <div className="w-full max-w-[842px] mx-auto text=[#444444] mb-[18px] flex flex-col  justify-center px-[15px] py-[15px]">
-        <p className='font-barlow-m text-[16px] mb-[25px] mx-auto lg:mx-0'>FAQ's</p>
-        <h2 className="font-poppins-m text-[20px] md:text-[25px] lg:text-[45px]  mb-[18px] mx-auto lg:mx-0">Frequently Asked Questions</h2>
+       <p className='font-barlow-m text-[16px] mb-[25px] mx-auto lg:mx-0'>FAQ&apos;s </p>
+       <h2 className="font-poppins-m text-[20px] md:text-[25px] lg:text-[45px]  mb-[18px] mx-auto lg:mx-0">Frequently Asked Questions</h2>
         <div className="space-y-4 mb-[42px]">
           {[
             "How much does it cost to install a kitchen countertop?",

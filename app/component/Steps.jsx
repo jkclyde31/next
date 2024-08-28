@@ -25,7 +25,7 @@ const steps = [
 
 const ProcessSteps = () => {
   return (
-    <div className="max-w-[1720px] mx-auto px-4 py-10 lg:absolute md:relative bottom-[-100px] text-[#1F1F1F]">
+    <div id="steps" className="max-w-[1720px] mx-auto px-4 py-10 lg:absolute md:relative bottom-[-100px] text-[#1F1F1F]">
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4">
         {steps.map((step) => (
             <div key={step.number} className="bg-white shadow-md overflow-hidden border-b-[13px] border-black">

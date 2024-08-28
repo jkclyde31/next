@@ -98,3 +98,14 @@
     display: block;
   }
 }
+
+.inner{
+  min-height: 400px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.inner #steps{
+  display: relative;
+  border: 1px solid red;
+}
