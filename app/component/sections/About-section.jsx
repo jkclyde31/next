@@ -15,7 +15,7 @@ const AboutSection = () => {
             West Valley Phoenix Custom Cabinet & Countertop Installation
           </h2>
           <p className="text-[16px] md:text-[18px] font-barlow leading-[28px] md:leading-[36px] pb-[40px] md:pb-[53px]">
-            At Arizona Interior Construction, we take great pride in providing the highest quality workmanship for our customers. With over 15 years in the industry, we have the skills, knowledge, and experience to transform the countertops and cabinets in your kitchen, bathrooms, laundry room, office, workshop, and outdoor living space. Contact us today to receive your free in-home estimate. We're proudly serving the entire Phoenix Metro area and all of Arizona!
+            At Arizona Interior Construction, we take great pride in providing the highest quality workmanship for our customers. With over 15 years in the industry, we have the skills, knowledge, and experience to transform the countertops and cabinets in your kitchen, bathrooms, laundry room, office, workshop, and outdoor living space. Contact us today to receive your free in-home estimate. We&apos;re proudly serving the entire Phoenix Metro area and all of Arizona!
           </p>
 
           <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center tablet:mx-auto space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
@@ -31,9 +31,7 @@ const AboutSection = () => {
         </div>
 
         {/* Image (now on the right) */}
-     
-          <Image src="/img/about/image.png" width={600} height={600} className="w-[90%]  md:w-full h-full object-cover mx-auto order-2 md:order-1" alt="About Us" />
-        
+        <Image src="/img/about/image.png" width={600} height={600} className="w-[90%]  md:w-full h-full object-cover mx-auto order-2 md:order-1 pb-[15px] md:pb-[0px] lg:pb-[0px]" alt="About Us" />
       </div>
     </section>
   );
