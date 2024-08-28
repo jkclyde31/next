@@ -29,7 +29,6 @@ module.exports = {
 
       screens: {
         'tablet': {'max': '959px'}, 
-        'xs': '475px',  // You can adjust this value as needed
 
       
       }

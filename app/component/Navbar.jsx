@@ -12,7 +12,7 @@ import PrimaryButton from "./PrimaryButton";
 const navLinks = [
   {
     title: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     title: "About",
