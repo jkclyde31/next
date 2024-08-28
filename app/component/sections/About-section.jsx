@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
@@ -11,7 +10,7 @@ const AboutSection = () => {
   return (
     <section className="text-[#444444]" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center  ">
-      <Image src="/img/about/image.png" width={600} height={600} className="w-full h-full object-cover" />
+      <Image src="/img/about/image.png" width={600} height={600} className="w-full h-full object-cover " />
 
       {/* LEFT */}
        <div className="mt-4 md:mt-0  flex flex-col justify-center  h-full  w-full max-w-[693px] px-4 pt-[2%] md:pt-[20%]  text-center md:text-start ">
