@@ -28,7 +28,7 @@ const ContactFormFooter = () => {
       {/* Form*/}
       <div className="max-w-[1570px] mx-auto pt-[55px] pb-[33px] px-[15px] md:px-[100px] bg-white mx-auto">
         <h2 className="text-[16px] font-poppins-b text-center mb-2">KEEP IN TOUCH</h2>
-        <h1 className="text-[50px] font-poppins-b text-center mb-4 leading-[53px]">Contact Form</h1>
+        <h1 className="text-[20px] xs:text-[30px] sm:text-[40px] md:text-[50px] font-poppins-b text-center mb-4 leading-[53px]">Contact Form</h1>
         <p className="text-center text-gray-600 mb-8">
           We will be glad to answer your questions, feel free to ask us all the information or quotations.<br />
           We are looking forward to work with you.
