@@ -11,7 +11,7 @@ const ServicesSection = () => {
           <h2 className="lg:text-[16px] font-barlow-m mb-[14px] md:mb-[27px] text-center md:text-start">
             OUR SERVICE OFFERING
           </h2>
-          <h1 className="text-[20px] sx:text-[25px] sm:text-[30px] md:text-[35px] lg:text-[45px] mb-4 lg:leading-[54px] text-center md:text-start">
+          <h1 className="text-[18px] sx:text-[25px] sm:text-[30px] md:text-[35px] lg:text-[45px] mb-4 lg:leading-[54px] text-center md:text-start">
             Explore Our Services & Discover How We<br />
             Can <span className="text-black font-poppins-b">Transform Your Dream Project Into Reality</span>
           </h1>
