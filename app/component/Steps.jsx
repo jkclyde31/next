@@ -29,7 +29,7 @@ const ProcessSteps = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4">
         {steps.map((step) => (
             <div key={step.number} className="bg-white shadow-md overflow-hidden border-b-[13px] border-black">
-            <div className="px-4 py-10 sm:py-12 md:py-[36px] w-full h-full max-w-full md:max-w-[410px] max-h-[300px] flex flex-col items-center mx-auto">
+            <div className="px-4 py-5 md:py-10 w-full h-full max-w-full md:max-w-[410px] max-h-[300px] flex flex-col items-center mx-auto">
                 <div className="w-[48px] h-[48px] sm:w-[58px] sm:h-[58px] md:w-[68px] md:h-[68px] bg-gradient-to-b from-[#373737] to-[#000000] text-white flex items-center justify-center mb-4">
                 <span className="font-poppins-b text-[20px] sm:text-[25px] md:text-[30px]">{step.number}</span>
                 </div>

@@ -85,16 +85,18 @@ const FAQKitchenSection = () => {
             ))}
           </div>
 
-          <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center tablet:mx-auto space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
-            <PrimaryButton text="FREE ESTIMATE" className="w-full sm:w-auto" />
+          <div className="buttons flex flex-col sm:flex-row max-w-[100%] w-[90%] md:max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
+            <PrimaryButton text="VIEW ALL" className="w-full sm:w-auto" />
             <div className="left flex justify-between items-center max-w-[190px] w-full">
-              <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57}/>
+              <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>
                 <p className='font-roboto text-[18px] whitespace-nowrap'>602-509-1242</p>
               </div>
             </div>
           </div>
+
+
         </div>
         {/* RIGHT */}
         <div className='flex justify-end'>
