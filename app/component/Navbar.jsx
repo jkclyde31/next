@@ -19,15 +19,15 @@ const navLinks = [
   },
   {
     title: "Gallery",
-    path: "/gallery",
+    path: "/gallery#content",
   },
   {
     title: "Services",
-    path: "/Services",
+    path: "/Services#content",
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "/contact#content",
   },
 ];
 
