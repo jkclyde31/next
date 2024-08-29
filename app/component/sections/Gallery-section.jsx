@@ -22,25 +22,7 @@ export default function GallerySection() {
 
       {/* Main content */}
       <main>
-        {/* Image gallery */}
-        {/* <div className="relative mb-8">
-          <div className="flex overflow-x-auto space-x-4 pb-4">
-            <Image src="/img/gallery/image1.png" alt="Kitchen 1" width={355} height={466} className="" />
-            <Image src="/img/gallery/image2.png" alt="Kitchen 2" width={600} height={400} className="rounded-lg" />
-            <Image src="/img/gallery/image3.png" alt="Kitchen 3" width={355} height={466} className="" />
-          </div>
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow">
-            <span className="text-sm font-semibold">Featured Work</span>
-          </div>
-        </div> */}
-
-        {/* Call to action */}
-        {/* <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Arizona Interior is Here For You To Help!</h2>
-          <Link href="/contact" className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300">
-            Get Started
-          </Link>
-        </div> */}
+        
       </main>
     </div>
    </div>
