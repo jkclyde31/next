@@ -7,7 +7,7 @@ import ProcessSteps from '../Steps';
 
 export default function Header() {
   return (
-    <header className="bg-[url('/img/bgs/bg-banner.png')] bg-no-repeat bg-cover bg-center text-[#222] min-h-[900px] relative">
+    <header className="bg-[url('/img/bgs/bg-banner.png')] bg-no-repeat bg-cover bg-left md:bg-center text-[#222] min-h-[900px] relative">
       <div className='max-w-[1720px] w-full mx-auto'>
         {/* NAVBAR ==========================================================================================================*/}
         <Navbar />
