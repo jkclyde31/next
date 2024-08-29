@@ -87,7 +87,7 @@ const FAQKitchenSection = () => {
 
           <div className="buttons flex flex-col sm:flex-row max-w-[100%] w-[90%] md:max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
             <PrimaryButton text="VIEW ALL" className="w-full sm:w-auto" />
-            <div className="left flex justify-between items-end max-w-[190px] w-full">
+            <div className="left flex justify-between items-center max-w-[190px] w-full">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>
@@ -99,8 +99,8 @@ const FAQKitchenSection = () => {
 
         </div>
         {/* RIGHT */}
-        <div className='flex justify-end'>
-          <Image src="/img/faqs/image.png" width={600} height={984} className="w-[90%] md:w-full max-w-[864px] object-cover mx-auto pb-[15px] md:pb-[0px] lg:pb-[0px]" alt="Kitchen countertop" />
+        <div className='flex justify-end items-end'>
+          <Image src="/img/faqs/image.png" width={600} height={984} className="w-[90%] md:w-full max-w-[864px] object-cover mx-auto md:mx-0 pb-[15px] md:pb-[0px] lg:pb-[0px] " alt="Kitchen countertop" />
         </div>
       </div>
     </section>

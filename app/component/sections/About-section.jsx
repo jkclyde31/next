@@ -7,14 +7,14 @@ const AboutSection = () => {
     <section className="text-[#444444]" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
-        <div className=" flex flex-col justify-center mx-auto lg:mx-0 h-full w-full max-w-[693px] px-4 pt-[2%] md:pt-[20%] text-center md:text-start order-1 md:order-2">
+        <div className=" flex flex-col justify-center mx-auto lg:mx-0 h-full w-full  max-w-[90%] md:max-w-[693px] px-4 pt-[2%] md:pt-[20%] text-center md:text-start order-1 md:order-2">
           <p className="text-[14px] md:text-[16px] font-barlow-m mb-[20px] md:mb-[25px]">
             KNOW ABOUT US
           </p>
           <h2 className="text-[20px] sx:text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]  font-poppins-l leading-tight md:leading-[1] mb-[15px] md:mb-[21px]">
             West Valley Phoenix <span className="block md:inline">Custom Cabinet & Countertop Installation</span>
           </h2>
-          <p className="text-[16px] md:text-[18px] font-barlow leading-[28px] md:leading-[36px] pb-[40px] md:pb-[53px]">
+          <p className="text-[16px] md:text-[18px] font-barlow leading-[28px] md:leading-[36px] pb-[15px] md:pb-[53px]">
             At Arizona Interior Construction, we take great pride in providing the highest quality workmanship for our customers. With over 15 years in the industry, we have the skills, knowledge, and experience to transform the countertops and cabinets in your kitchen, bathrooms, laundry room, office, workshop, and outdoor living space. Contact us today to receive your free in-home estimate. We&apos;re proudly serving the entire Phoenix Metro area and all of Arizona!
           </p>
 
