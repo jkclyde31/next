@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
   <nav className="bg-[#373737] lg:bg-none  md:bg-none py-2 px-2 lg:py-0 lg:px-0  md:py-0    md:bg-transparent lg:bg-transparent mx-auto max-w-[1720px] w-full top-0 left-0 right-0 z-10 bg-opacity-90">
-    <div className="flex   items-center  lg:items-start lg:justify-between md:justify-between justify-end mx-auto lg:pt-[40px] custom-padding lg:pb-[44px] md:pb-[44px] ">
+    <div className="flex  w-full max-w-[100%] items-center  lg:items-start lg:justify-between md:justify-between justify-end mx-auto lg:pt-[40px] custom-padding lg:pb-[44px] md:pb-[44px] ">
         <Link
           href={"/"}
           className="md:pt-[15px]   pr-[25px] hidden md:block"
