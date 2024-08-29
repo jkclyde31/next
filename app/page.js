@@ -11,7 +11,6 @@ const page = () => {
         <AboutSection/>
         <FAQKitchenSection/>
         <ServicesSection/>
-        <GallerySection/>
     </div>
   )
 }

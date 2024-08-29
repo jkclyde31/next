@@ -21,7 +21,8 @@ const ServicesSection = () => {
           </p>
 
           {/* Button */}
-          <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center tablet:mx-auto space-y-4 sm:space-y-0 sm:space-x-4">
+        
+          <div className="buttons flex flex-col sm:flex-row max-w-[100%] w-[90%] md:max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
             <PrimaryButton text="FREE ESTIMATE" className="w-full sm:w-auto" />
             <div className="left flex justify-between items-center max-w-[190px] w-full">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
