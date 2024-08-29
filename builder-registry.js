@@ -7,6 +7,7 @@ import { MyFunComponent } from "./app/component/MyFunComponent";
 import NotFound from "./app/component/NotFound";
 import PrimaryButton from "./app/component/PrimaryButton";
 import CustomizableForm from "./app/component/CustomContact";
+import GalleryComponent from "./app/component/CustomGallery";
 
 // builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
@@ -92,6 +93,50 @@ Builder.registerComponent(CustomizableForm, {
       name: 'textColor',
       type: 'string',
       defaultValue: 'text-gray-800',
+    },
+  ],
+});
+
+Builder.registerComponent(GalleryComponent, {
+  name: 'Stylish Gallery',
+  inputs: [
+    {
+      name: 'images',
+      type: 'list',
+      subFields: [
+        {
+          name: 'src',
+          type: 'file',
+          allowedFileTypes: ['jpeg', 'jpg', 'png', 'webp'],
+          required: true,
+        },
+        {
+          name: 'alt',
+          type: 'string',
+          defaultValue: 'Gallery image',
+        },
+      ],
+    },
+    {
+      name: 'columns',
+      type: 'number',
+      defaultValue: 3,
+      min: 1,
+      max: 4,
+      step: 1,
+    },
+    {
+      name: 'gap',
+      type: 'number',
+      defaultValue: 4,
+      min: 0,
+      max: 8,
+      step: 1,
+    },
+    {
+      name: 'rounded',
+      type: 'boolean',
+      defaultValue: true,
     },
   ],
 });

@@ -17,9 +17,10 @@ const CustomContact = ({ fields, backgroundColor, textColor, buttonColor, button
   };
 
   return (
-    <div className={`py-3 px-6 rounded-lg shadow-lg max-w-full w-full mx-auto inner ${backgroundColor}`}>
-        <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+   <>
+   <h1 className="text-center font-roboto">CONTACT</h1>
+    <div className={`py-3 px-6 rounded-lg shadow-lg max-w-full w-full mx-auto  ${backgroundColor}`}>
+      <form onSubmit={handleSubmit} className="space-y-2 w-full">
         {(fields || []).map((field, index) => (
           <div key={index}>
             <label htmlFor={field.name} className={`block mb-2 font-bold ${textColor}`}>
@@ -54,6 +55,7 @@ const CustomContact = ({ fields, backgroundColor, textColor, buttonColor, button
         </button>
       </form>
     </div>
+   </>
   );
 };
 
