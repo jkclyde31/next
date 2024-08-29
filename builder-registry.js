@@ -6,6 +6,7 @@ import Header from "./app/component/sections/Header";
 import { MyFunComponent } from "./app/component/MyFunComponent";
 import NotFound from "./app/component/NotFound";
 import PrimaryButton from "./app/component/PrimaryButton";
+import CustomizableForm from "./app/component/CustomContact";
 
 // builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
@@ -37,6 +38,8 @@ Builder.registerComponent(PrimaryButton, {
       type: 'object',
     },
   ],
+
+  
 });
 
 Builder.registerComponent(MyFunComponent, {
@@ -47,14 +50,48 @@ Builder.registerComponent(MyFunComponent, {
   },
 });
 
-Builder.registerComponent(Footer, {
-  name: "Footer",
-});
 
-Builder.registerComponent(Header, {
-  name: "Header",
-});
 
-Builder.registerComponent(NotFound, {
-  name: "NotFound",
+Builder.registerComponent(CustomizableForm, {
+  name: 'Customizable Form',
+  inputs: [
+    {
+      name: 'fields',
+      type: 'list',
+      subFields: [
+        {
+          name: 'name',
+          type: 'string',
+        },
+        {
+          name: 'label',
+          type: 'string',
+        },
+        {
+          name: 'type',
+          type: 'string',
+          enum: ['text', 'email', 'number', 'textarea'],
+        },
+        {
+          name: 'required',
+          type: 'boolean',
+        },
+      ],
+    },
+    {
+      name: 'submitButtonText',
+      type: 'string',
+      defaultValue: 'Submit',
+    },
+    {
+      name: 'backgroundColor',
+      type: 'string',
+      defaultValue: 'bg-white',
+    },
+    {
+      name: 'textColor',
+      type: 'string',
+      defaultValue: 'text-gray-800',
+    },
+  ],
 });

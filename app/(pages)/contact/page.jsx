@@ -1,12 +1,30 @@
-import React from 'react'
 
-const Home = () => {
+import { builder } from "@builder.io/sdk";
+import { RenderBuilderContent } from "@/components/builder";
+// Replace with your Public API Key
+builder.init('2fa337738072419589aaa019bd9defbc');
+
+export default async function Page(props) {
+  const model = "page";
+  const content = await builder
+    // Get the page content from Builder with the specified options
+    .get("page", {
+      userAttributes: {
+        // Use the page path specified in the URL to fetch the content
+        urlPath: "/contact" + (props?.params?.page?.join("/") || ""),
+      },
+      // Set prerender to false to return JSON instead of HTML
+      prerender: false,
+    })
+    // Convert the result to a promise
+    .toPromise();
+
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-100 text-center">
-      <h1 className="text-4xl font-bold text-blue-800">Contact Page</h1>
- 
-    </div>
-  )
+    <>
+      <div className="inner">
+        {/* Render the Builder page */}
+      <RenderBuilderContent content={content} model={model} />
+      </div>
+    </>
+  );
 }
-
-export default Home
