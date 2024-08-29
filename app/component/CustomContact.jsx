@@ -18,7 +18,6 @@ const CustomContact = ({ fields, backgroundColor, textColor, buttonColor, button
 
   return (
    <>
-   <h1 className="text-center font-roboto">CONTACT</h1>
     <div className={`py-3 px-6 rounded-lg shadow-lg max-w-full w-full mx-auto  ${backgroundColor}`}>
       <form onSubmit={handleSubmit} className="space-y-2 w-full">
         {(fields || []).map((field, index) => (
