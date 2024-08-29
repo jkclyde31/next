@@ -3,38 +3,51 @@
 import { useEffect, useState } from "react";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 
-// Initialize builder with your public API key
+// Put your API key here
 builder.init('2fa337738072419589aaa019bd9defbc');
 
-const About = () => {
-  const [builderContentJson, setBuilderContentJson] = useState(null);
-  const isPreviewing = useIsPreviewing();
-  const model = "page";
+// set whether you're using the Visual Editor,
+// whether there are changes,
+// and render the content if found
+export default function CatchAllRoute() {
+  const isPreviewingInBuilder = useIsPreviewing();
+  const [notFound, setNotFound] = useState(false);
+  const [content, setContent] = useState(null);
 
+  // get the page content from Builder
   useEffect(() => {
-    builder.get(model, { url: '/' })
-      .promise()
-      .then(setBuilderContentJson);
-  }, []);
+    async function fetchContent() {
+      const content = await builder
+        .get("page", {
+          url: window.location.pathname
+        })
+        .promise();
 
-  // If no content is found, show your default UI
-  if (!builderContentJson && !isPreviewing) {
-    return (
-      <div id="content">
-        <h1>NOT FOUND</h1>
-      </div>
-    );
+      setContent(content);
+      setNotFound(!content);
+
+      // if the page title is found, 
+      // set the document title
+      if (content?.data.title) {
+      document.title = content.data.title
+      }
+    }
+    fetchContent();
+  }, [window.location.pathname]);
+  
+  // If no page is found, return 
+  // a 404 page from your code.
+  // The following hypothetical 
+  // <FourOhFour> is placeholder.
+  if (notFound && !isPreviewingInBuilder) {
+    return "Not Found"
   }
 
-  // Otherwise, render the Builder content
+  // return the page when found
   return (
-    <div id="content" className="inner">
-    <BuilderComponent
-      model={model}
-      content={builderContentJson}
-    />
+    <div className="inner">
+      {/* Render the Builder page */}
+      <BuilderComponent model="page" content={content} />
     </div>
   );
-};
-
-export default About;
+}
