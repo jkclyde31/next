@@ -70,7 +70,7 @@ const Navbar = () => {
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
-            <PrimaryButton text="Request Service"/>
+            <PrimaryButton text="Request Service" href="/contact#content"/>
           </ul>
         </div>
 
