@@ -22,15 +22,6 @@ export default function Header() {
          {/* NAVBAR ==========================================================================================================*/}
           <Navbar/>
         
-          {/* Mobile menu */}
-          {isMenuOpen && (
-            <nav className="md:hidden bg-gray-700 px-4 py-2">
-              <Link href="/" className="block py-2 hover:text-gray-300">Home</Link>
-              <Link href="/about" className="block py-2 hover:text-gray-300">About</Link>
-              <Link href="/contact" className="block py-2 hover:text-gray-300">Contact</Link>
-            </nav>
-          )}
-
           {/* BANNER ===================================================================================================*/}
           <div id="banner" className='px-2'>
             <Link href="/" className="block md:hidden pt-[44px] pb-[44px]">
@@ -52,7 +43,7 @@ export default function Header() {
             <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center tablet:mx-auto space-y-4 sm:space-y-0 sm:space-x-4">
               <PrimaryButton text="FREE ESTIMATE" className="w-full sm:w-auto" />
               <div className="left flex justify-between items-center max-w-[190px] w-full">
-                <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57}/>
+                <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57}  />
                 <div>
                   <p className='font-nunito text-[14px]'>Call Us Now</p>
                   <p className='font-roboto text-[18px]'>602-509-1242</p>
