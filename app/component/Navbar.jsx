@@ -22,7 +22,7 @@ const navLinks = [
     path: "/gallery#content",
   },
   {
-    title: "Serviceees",
+    title: "Services",
     path: "/services#content",
   },
   {
