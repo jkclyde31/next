@@ -7,7 +7,7 @@ import { RenderBuilderContent } from "@/components/builder";
 builder.init('2fa337738072419589aaa019bd9defbc');
 
 export default async function Page(props) {
-  const model = "page";
+  const model = "about-model";
   const content = await builder
     // Get the page content from Builder with the specified options
     .get("page", {
