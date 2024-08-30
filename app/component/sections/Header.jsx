@@ -21,7 +21,7 @@ export default function Header() {
           
           {/* Text */}
           <div className="max-w-[728px] text-center mx-auto lg:text-left lg:mx-0">
-            <p className='font-nunito text-[14px] xs:text-[16px] text-[#444] pb-[5px] sm:pb-[15px] md:pb-[25px] leading-[120%]'>
+            <p className='font-nunito text-[14px] xs:text-[16px] text-[#444] pb-[5px] sm:pb-[15px] md:pb-[25px] leading-[120%] '>
               AT ARIZONA INTERIOR CONSTRUCTION
             </p>
             <h1 className='font-poppins-l text-[20px] xs:text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] pb-[18px] text-[#1F1F1F] leading-[120%]'>
@@ -36,7 +36,7 @@ export default function Header() {
               <div className="w-full max-w-[260px]">
                 <PrimaryButton text="FREE ESTIMATE" className="w-full max-w-full" width='266px'  href="/contact#content"/>
               </div>
-              <div className="left flex justify-between items-center max-w-[190px] w-full">
+              <div className="left flex justify-between items-center max-w-[190px] w-full hover:scale-105 transition duration-300 ease-in-out ">
                 <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
                 <div>
                   <p className='font-nunito text-[14px]'>Call Us Now</p>

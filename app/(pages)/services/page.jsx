@@ -12,7 +12,6 @@ export default async function Page(props) {
         // Use the page path specified in the URL to fetch the content
         urlPath: "/services" + (props?.params?.page?.join("/") || ""),
       },
-      // Set prerender to false to return JSON instead of HTML
       prerender: false,
     })
     // Convert the result to a promise

@@ -12,7 +12,7 @@ const PrimaryButton = ({ text, className = '', width = '266px' , href="#"}) => {
           h-[57px]   rounded-sm shadow-md whitespace-nowrap 
         
           hover:bg-gray-800 hover:scale-105 transition duration-300 ease-in-out 
-          w-full  ${className}`
+          w-full  ${className}    ` 
         }
         // style={{ width }}
       >

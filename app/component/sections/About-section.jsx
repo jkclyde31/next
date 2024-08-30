@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
         <div className=" flex flex-col justify-center mx-auto lg:mx-0 h-full w-full  max-w-[90%] md:max-w-[693px] px-4 pt-[2%] md:pt-[20%] text-center md:text-start order-1 md:order-2">
-          <p className="text-[14px] md:text-[16px] font-barlow-m mb-[20px] md:mb-[25px]">
+          <p className="text-[14px] md:text-[16px] font-barlow-m mb-[20px] md:mb-[25px] animate-bounce">
             KNOW ABOUT US
           </p>
           <h2 className="text-[20px] sx:text-[25px] sm:text-[30px] tablet:text-[35px] lg:text-[40px]  font-poppins-l leading-tight md:leading-[1] mb-[15px] md:mb-[21px]">
@@ -22,7 +22,7 @@ const AboutSection = () => {
               <div className="w-full max-w-[260px]">
                 <PrimaryButton text="GET A QUOTE" className="w-full " width='266px'  href="/contact#content"/>
               </div>
-              <div className="left flex  justify-between items-center max-w-[190px] w-full ">
+              <div className="left flex  justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
                 <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
                 <div>
                   <p className='font-nunito text-[14px]'>Call Us Now</p>

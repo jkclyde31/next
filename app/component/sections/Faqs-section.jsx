@@ -77,7 +77,7 @@ const FAQKitchenSection = () => {
       <div className="grid tablet:grid-cols-2 gap-2">
         {/* LEFT */}
         <div className="w-full max-w-[842px] mx-auto text-[#444444] mb-[18px] flex flex-col justify-center px-[15px] py-[15px]">
-          <p className='hidden font-barlow-m text-[16px] mb-[25px] mx-auto lg:mx-0 lg:block'>FAQ&apos;s </p>
+          <p className='hidden font-barlow-m text-[16px] mb-[25px] mx-auto lg:mx-0 lg:block animate-bounce'>FAQ&apos;s </p>
           <h2 className="font-poppins-m text-[25px]  lg:text-[45px] text-center lg:text-start mb-[18px] mx-auto lg:mx-0">Frequently Asked Questions</h2>
           <div className="space-y-4 mb-[42px]">
             {faqs.map((faq, index) => (
@@ -90,7 +90,7 @@ const FAQKitchenSection = () => {
               <div className="w-full max-w-full tablet:max-w-[260px]">
                 <PrimaryButton text="VIEW ALL" className="w-full " width='266px'  href="/contact#content"/>
               </div>
-            <div className="left flex justify-between items-center max-w-[190px] w-full">
+            <div className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>

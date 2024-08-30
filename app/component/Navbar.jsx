@@ -41,7 +41,7 @@ const Navbar = () => {
           href={"/"}
           className="tablet:pt-[15px]   pr-[25px] hidden tablet:block"
         >
-          <Image src="/img/logo.png" alt="Logo" width={253} height={174}/>
+          <Image src="/img/logo.png" alt="Logo" width={253} height={174} className=" hover:scale-105 transition duration-300 ease-in-out "/>
         </Link>
 
         {/* mobile responsive */}

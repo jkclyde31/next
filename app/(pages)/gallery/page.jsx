@@ -11,7 +11,7 @@ export default async function Page(props) {
     .get("page", {
       userAttributes: {
         // Use the page path specified in the URL to fetch the content
-        urlPath: "/gallery" + (props?.params?.page?.join("/") || ""),
+        urlPath: "/about" + (props?.params?.page?.join("/") || ""),
       },
       // Set prerender to false to return JSON instead of HTML
       prerender: false,
