@@ -24,7 +24,7 @@ const ServicesSection = () => {
         
           <div className="buttons flex flex-col sm:flex-row  w-[90%] max-w-[432px] justify-between items-center mx-auto tablet:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
               <div className="w-full max-w-[260px]">
-                <PrimaryButton text="MORE SERVICES" className="w-full " width='266px'  href="/contact#content"/>
+                <PrimaryButton text="MORE SERVICES" className="w-full " width='266px'  href="/services#content"/>
               </div>
             <div className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />

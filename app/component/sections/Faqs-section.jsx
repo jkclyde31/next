@@ -88,7 +88,7 @@ const FAQKitchenSection = () => {
           {/* Buttons */}
           <div className="buttons flex flex-col tablet:flex-row w-[100%] max-w-full tablet:max-w-[432px] justify-between items-center mx-auto tablet:mx-0 space-y-4 tablet:space-y-0 tablet:space-x-4 pb-[15px]">
               <div className="w-full max-w-full tablet:max-w-[260px]">
-                <PrimaryButton text="VIEW ALL" className="w-full " width='266px'  href="/contact#content"/>
+                <PrimaryButton text="VIEW ALL" className="w-full " width='266px'  href="/services#content"/>
               </div>
             <div className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
