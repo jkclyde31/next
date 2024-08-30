@@ -23,7 +23,7 @@ const ContactFormFooter = () => {
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-200">
       <div className="max-w-full mx-auto pt-12 px-4 sm:px-6 lg:px-8">
       {/* Form*/}
       <div className="max-w-[1570px] pt-[15px] md:pt-[55px] pb-[33px] px-[15px] lg:px-[100px] bg-white mx-auto">
