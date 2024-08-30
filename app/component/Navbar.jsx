@@ -23,7 +23,7 @@ const navLinks = [
   },
   {
     title: "Services",
-    path: "/Services#content",
+    path: "/services#content",
   },
   {
     title: "Contact",
