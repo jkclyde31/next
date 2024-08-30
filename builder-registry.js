@@ -1,13 +1,12 @@
 "use client";
 import { builder, Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
-import Footer from "./app/component/sections/Footer";
-import Header from "./app/component/sections/Header";
+
 import { MyFunComponent } from "./app/component/MyFunComponent";
-import NotFound from "./app/component/NotFound";
 import PrimaryButton from "./app/component/PrimaryButton";
 import CustomizableForm from "./app/component/CustomContact";
 import GalleryComponent from "./app/component/CustomGallery";
+import ServicesComponent from "./app/component/Services";
 
 // builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
@@ -138,5 +137,66 @@ Builder.registerComponent(GalleryComponent, {
       type: 'boolean',
       defaultValue: true,
     },
+  ],
+});
+
+
+
+Builder.registerComponent(ServicesComponent, {
+  name: 'Interior Design Services',
+  inputs: [
+    {
+      name: 'customClasses',
+      type: 'string',
+      defaultValue: '',
+      helperText: 'Add custom classes separated by commas'
+    },
+    {
+      name: 'serviceTitleFontSize',
+      type: 'enum',
+      enum: ['lg', 'xl', '2xl'],
+      defaultValue: 'xl'
+    },
+    {
+      name: 'serviceTitleFontFamily',
+      type: 'enum',
+      enum: ['sans', 'serif', 'mono'],
+      defaultValue: 'sans'
+    },
+    {
+      name: 'descriptionFontSize',
+      type: 'enum',
+      enum: ['sm', 'base', 'lg'],
+      defaultValue: 'base'
+    },
+    {
+      name: 'descriptionFontFamily',
+      type: 'enum',
+      enum: ['sans', 'serif', 'mono'],
+      defaultValue: 'sans'
+    },
+    {
+      name: 'services',
+      type: 'list',
+      defaultValue: [],
+      subFields: [
+        {
+          name: 'title',
+          type: 'string',
+          defaultValue: 'Service Title'
+        },
+        {
+          name: 'description',
+          type: 'longText',
+          defaultValue: 'Service description goes here'
+        },
+        {
+          name: 'image',
+          type: 'file',
+          allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
+          required: false,
+        },
+      ]
+    }
   ],
 });
