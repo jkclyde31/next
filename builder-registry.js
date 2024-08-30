@@ -196,7 +196,36 @@ Builder.registerComponent(ServicesComponent, {
           allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
           required: false,
         },
+        {
+          name: 'showButton',
+          type: 'boolean',
+          defaultValue: true
+        },
+        {
+          name: 'buttonText',
+          type: 'string',
+          defaultValue: 'Learn More'
+        },
+        {
+          name: 'buttonBackgroundClasses',
+          type: 'string',
+          defaultValue: 'bg-blue-500 hover:bg-blue-600',
+          helperText: 'Enter Tailwind CSS classes for button background and hover state'
+        },
+        {
+          name: 'buttonTextColor',
+          type: 'string',
+          defaultValue: 'text-white',
+          enum: ['text-white', 'text-black', 'text-gray-800']
+        },
+        {
+          name: 'buttonAction',
+          type: 'string',
+          defaultValue: '',
+          helperText: 'Enter a JavaScript function body, e.g., "console.log(\'Button clicked\')"'
+        }
       ]
     }
   ],
 });
+

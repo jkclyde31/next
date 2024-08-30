@@ -1,6 +1,3 @@
-// test
-
-
 import { builder } from "@builder.io/sdk";
 import { RenderBuilderContent } from "@/components/builder";
 // Replace with your Public API Key
