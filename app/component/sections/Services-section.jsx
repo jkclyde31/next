@@ -4,27 +4,28 @@ import PrimaryButton from '../PrimaryButton';
 
 const ServicesSection = () => {
   return (
-    <section className="bg-[url('/img/bgs/bg-services.png')] bg-no-repeat bg-cover bg-center py-5 md:py-16">
+    <section className="bg-[url('/img/bgs/bg-services.png')] bg-no-repeat bg-cover bg-center py-5 tablet:py-16">
       <div className="container mx-auto px-4 max-w-[1720px] w-full">
         {/* Texts */}
-        <div className="mb-12 text-[#1F1F1F] w-[90%] mx-auto md:mx-0 md:max-w-[100%]">
-          <h2 className="lg:text-[16px] font-barlow-m mb-[14px] md:mb-[27px] text-center md:text-start">
+        <div className="mb-12 text-[#1F1F1F] w-[90%] mx-auto tablet:mx-0 md:max-w-[100%]">
+          <h2 className="lg:text-[16px] font-barlow-m mb-[14px] tablet:mb-[27px] text-center tablet:text-start">
             OUR SERVICE OFFERING
           </h2>
-          <h1 className="text-[18px] sx:text-[25px] sm:text-[30px] md:text-[35px] lg:text-[45px] mb-4 lg:leading-[54px] text-center md:text-start">
+          <h1 className="text-[18px] xs:text-[25px] sm:text-[30px] tablet:text-[35px] lg:text-[45px] mb-4 lg:leading-[54px] text-center tablet:text-start">
             Explore Our Services & Discover How We
            <span className='inline md:block'> Can <span className="text-black font-poppins md:font-poppins-b ">Transform Your Dream Project Into Reality</span></span>
           </h1>
-          <p className="text-[14px] lg:text-[16px] tracking-[1.6px] font-barlow  mb-[25px] md:mb-[41px] text-center md:text-start">
+          <p className="text-[14px] lg:text-[16px] tracking-[1.6px] font-barlow  mb-[25px] md:mb-[41px] text-center tablet:text-start">
             We take great pride in providing the highest quality workmanship for our customers. With over 15 years
             <span className='inline md:block'>  in the industry, we have the skills, knowledge, and experience.</span>
           </p>
 
           {/* Button */}
         
-          <div className="buttons flex flex-col sm:flex-row max-w-[100%] w-[90%] md:max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
-            <PrimaryButton text="FREE ESTIMATE" className="w-full sm:w-auto" />
-            <div className="left flex justify-between items-center max-w-[190px] w-full">
+          <div className="buttons flex flex-col sm:flex-row  w-[90%] max-w-[432px] justify-between items-center mx-auto tablet:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
+              <div className="w-full max-w-[260px]">
+                <PrimaryButton text="MORE SERVICES" className="w-full " width='266px'  href="/contact#content"/>
+              </div>            <div className="left flex justify-between items-center max-w-[190px] w-full">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>

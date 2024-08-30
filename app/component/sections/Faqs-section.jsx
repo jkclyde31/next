@@ -74,19 +74,22 @@ const FAQKitchenSection = () => {
 
   return (
     <section className="text-[#444444] bg-[#F0F0F1]" id="about">
-      <div className="md:grid md:grid-cols-2 gap-2">
+      <div className="grid tablet:grid-cols-2 gap-2">
         {/* LEFT */}
         <div className="w-full max-w-[842px] mx-auto text-[#444444] mb-[18px] flex flex-col justify-center px-[15px] py-[15px]">
           <p className='hidden font-barlow-m text-[16px] mb-[25px] mx-auto lg:mx-0 lg:block'>FAQ&apos;s </p>
-          <h2 className="font-poppins-m text-[25px] md:text-[25px] lg:text-[45px] text-center lg:text-start mb-[18px] mx-auto lg:mx-0">Frequently Asked Questions</h2>
+          <h2 className="font-poppins-m text-[25px]  lg:text-[45px] text-center lg:text-start mb-[18px] mx-auto lg:mx-0">Frequently Asked Questions</h2>
           <div className="space-y-4 mb-[42px]">
             {faqs.map((faq, index) => (
               <FAQItem key={index} question={faq.question} answer={faq.answer} />
             ))}
           </div>
-
-          <div className="buttons flex flex-col sm:flex-row max-w-[100%] w-[90%] md:max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4 pb-[15px]">
-            <PrimaryButton text="VIEW ALL" className="w-full sm:w-auto" href='/gallery'/>
+          
+          {/* Buttons */}
+          <div className="buttons flex flex-col tablet:flex-row w-[100%] max-w-full tablet:max-w-[432px] justify-between items-center mx-auto tablet:mx-0 space-y-4 tablet:space-y-0 tablet:space-x-4 pb-[15px]">
+              <div className="w-full max-w-full tablet:max-w-[260px]">
+                <PrimaryButton text="VIEW ALL" className="w-full " width='266px'  href="/contact#content"/>
+              </div>
             <div className="left flex justify-between items-center max-w-[190px] w-full">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
@@ -99,8 +102,8 @@ const FAQKitchenSection = () => {
 
         </div>
         {/* RIGHT */}
-        <div className='flex justify-end items-end'>
-          <Image src="/img/faqs/image.png" width={600} height={984} className="w-[90%] md:w-full max-w-[864px] object-cover mx-auto md:mx-0 pb-[15px] md:pb-[0px] lg:pb-[0px] " alt="Kitchen countertop" />
+        <div className='flex justify-end items-start'>
+          <Image src="/img/faqs/image.png" width={600} height={984} className="w-[90%] tablet:w-full max-w-[864px] object-cover mx-auto tablet:mx-0 pb-[15px] tablet:pb-[0px] " alt="Kitchen countertop" />
         </div>
       </div>
     </section>

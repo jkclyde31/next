@@ -35,17 +35,17 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-  <nav className="bg-[#373737]  p-0 md:p-2 lg:p-0  md:py-0  md:bg-transparent lg:bg-transparent mx-auto max-w-[1720px] w-full top-0 left-0 right-0 z-10 bg-opacity-90">
-    <div className="flex  w-full  lg:px-[15px] px-0 items-center  lg:items-start lg:justify-between md:justify-between justify-end mx-auto lg:pt-[40px] custom-padding lg:pb-[44px] md:pb-[44px] ">
+  <nav className="bg-[#373737]  p-0 tablet:p-2 lg:p-0  tablet:py-0  tablet:bg-transparent  mx-auto max-w-[1720px] w-full top-0 left-0 right-0 z-10 bg-opacity-90">
+    <div className="flex  w-full  lg:px-[15px] px-0 items-center  lg:items-start lg:justify-between tablet:justify-between justify-end mx-auto lg:pt-[40px] custom-padding lg:pb-[44px] tablet:pb-[44px] ">
         <Link
           href={"/"}
-          className="md:pt-[15px]   pr-[25px] hidden md:block"
+          className="tablet:pt-[15px]   pr-[25px] hidden tablet:block"
         >
           <Image src="/img/logo.png" alt="Logo" width={253} height={174}/>
         </Link>
 
         {/* mobile responsive */}
-        <div className="mobile-menu block md:hidden py-1 px-2">
+        <div className="mobile-menu block tablet:hidden py-1 px-2">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -63,15 +63,18 @@ const Navbar = () => {
           )}
         </div>
          {/* Desktop */}
-        <div className="menu hidden md:block md:w-full max-w-[870px] " id="navbar">
-          <ul className="flex  justify-between items-center w-full  md:p-0 md:flex-row md:space-x-4 mt-0 ">
+        <div className="menu hidden tablet:flex justify-between gap-3 tablet:w-full max-w-[870px] " id="navbar">
+          <ul className="flex  justify-between items-center max-w-[549px]  w-full  tablet:p-0 tablet:flex-row tablet:space-x-4 mt-0 ">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
-            <PrimaryButton text="Request Service" href="/contact#content"/>
           </ul>
+
+          <div className="w-full max-w-[266px]">
+            <PrimaryButton text="FREE ESTIMATE" className="w-full " width='266px'  href="/contact#content"/>
+          </div>
         </div>
 
       </div>

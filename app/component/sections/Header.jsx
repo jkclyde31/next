@@ -15,12 +15,12 @@ export default function Header() {
         {/* BANNER ===================================================================================================*/}
         {/* logo */}
         <div id="banner" className='px-2'>
-          <Link href="/" className="block md:hidden pt-[25px] pb-[25px]">
+          <Link href="/" className="block tablet:hidden pt-[25px] pb-[25px]">
             <Image src="/img/logo.png" alt="Logo" width={213} height={134} className='mx-auto' />
           </Link>
           
           {/* Text */}
-          <div className="max-w-[728px] text-center mx-auto md:text-left md:mx-0">
+          <div className="max-w-[728px] text-center mx-auto lg:text-left lg:mx-0">
             <p className='font-nunito text-[14px] xs:text-[16px] text-[#444] pb-[5px] sm:pb-[15px] md:pb-[25px] leading-[120%]'>
               AT ARIZONA INTERIOR CONSTRUCTION
             </p>
@@ -32,8 +32,10 @@ export default function Header() {
               With over 15 years in the industry, we have the skills, knowledge, and experience to transform the countertops and cabinets in your kitchen, bathrooms, laundry room, office, workshop, and outdoor living space.
             </p>
             
-            <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-4">
-              <PrimaryButton text="FREE ESTIMATE" className="w-full sm:w-auto"  href="/contact#content"/>
+            <div className="buttons flex flex-col sm:flex-row max-w-[432px] justify-between items-center mx-auto lg:mx-0 space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="w-full max-w-[260px]">
+                <PrimaryButton text="FREE ESTIMATE" className="w-full max-w-full" width='266px'  href="/contact#content"/>
+              </div>
               <div className="left flex justify-between items-center max-w-[190px] w-full">
                 <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
                 <div>
@@ -42,6 +44,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
