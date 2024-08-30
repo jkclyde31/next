@@ -52,23 +52,23 @@ const FAQKitchenSection = () => {
   const faqs = [
     {
       question: "How much does it cost to install a kitchen countertop?",
-      answer: "The cost varies depending on material, size, and complexity. On average, it can range from $2,000 to $4,500."
+      answer: "➜ The cost varies depending on material, size, and complexity. On average, it can range from $2,000 to $4,500."
     },
     {
       question: "What are the most popular materials for kitchen countertops?",
-      answer: "Popular materials include granite, quartz, marble, butcher block, and laminate."
+      answer: "➜ Popular materials include granite, quartz, marble, butcher block, and laminate."
     },
     {
       question: "How long does it typically take to install a kitchen countertop?",
-      answer: "Installation usually takes 1-3 days, depending on the size and complexity of the project."
+      answer: "➜ Installation usually takes 1-3 days, depending on the size and complexity of the project."
     },
     {
       question: "What factors should I consider when choosing a countertop material?",
-      answer: "Consider durability, maintenance, cost, aesthetics, and how it fits with your kitchen's overall design."
+      answer: "➜ Consider durability, maintenance, cost, aesthetics, and how it fits with your kitchen's overall design."
     },
     {
       question: "Do I need to hire a professional for countertop installation or can I do it myself?",
-      answer: "While DIY is possible for some materials, professional installation is recommended for best results and to avoid costly mistakes."
+      answer: "➜ While DIY is possible for some materials, professional installation is recommended for best results and to avoid costly mistakes."
     }
   ];
 

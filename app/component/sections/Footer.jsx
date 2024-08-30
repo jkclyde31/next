@@ -26,12 +26,14 @@ const ContactFormFooter = () => {
     <div className="bg-gray-100">
       <div className="max-w-full mx-auto pt-12 px-4 sm:px-6 lg:px-8">
       {/* Form*/}
-      <div className="max-w-[1570px] pt-[55px] pb-[33px] px-[15px] md:px-[100px] bg-white mx-auto">
+      <div className="max-w-[1570px] pt-[15px] md:pt-[55px] pb-[33px] px-[15px] lg:px-[100px] bg-white mx-auto">
         <h2 className="text-[16px] font-poppins-b text-center mb-2">KEEP IN TOUCH</h2>
         <h1 className="text-[40px]  md:text-[50px] font-poppins-b text-center mb-4 leading-[53px]">Contact Form</h1>
         <p className="text-center text-gray-600 mb-8">
-          We will be glad to answer your questions, feel free to ask us all the information or quotations.<br />
-          We are looking forward to work with you.
+          We will be glad to answer your questions, feel free to ask us all the information or quotations.
+          <span className="inline md:block">
+              We are looking forward to work with you.
+          </span>
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -68,20 +70,25 @@ const ContactFormFooter = () => {
             className="bg-gray-100 p-2 rounded w-full h-32"
             required
           ></textarea>
-          <div className="flex items-center space-x-2">
-            <input
-              type="checkbox"
-              id="consent"
-              checked={consent}
-              onChange={(e) => setConsent(e.target.checked)}
-              required
-            />
-            <label htmlFor="consent" className="text-sm text-gray-600">
-              I hereby consent to having this website store my submitted information so that they can respond to my inquiry.
-            </label>
-          </div>
-          <div className="submit flex flex-col gap-5 md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-2">
+
+          {/* checkbox */}
+          <div className="submit flex flex-col gap-1 tablet:flex-row items-center justify-between">
+          <div>
+            <div className="flex items-start lg:items-center space-x-2">
+              <input
+                type="checkbox"
+                id="consent"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                required
+              />
+              <label htmlFor="consent" className="text-sm text-gray-600">
+                I hereby consent to having this website store my submitted information so that they can respond to my inquiry.
+              </label>
+            </div>
+
+
+            <div className="flex items-start lg:items-center space-x-2">
               <input
                 type="checkbox"
                 id="newsletter"
@@ -92,16 +99,19 @@ const ContactFormFooter = () => {
                 I would like to receive a newsletter from Arizona Interior Construction Inc.
               </label>
             </div>
-            <div className="flex justify-between items-center">
-              <button type="submit" className="bg-black text-white px-6 py-2 rounded">
+          </div>
+            {/* submit button */}
+            <div className="flex justify-between items-center pt-[15px] tablet:pt-0">
+              <button type="submit" className="bg-black text-white px-6 py-2 rounded whitespace-nowrap">
                 SUBMIT FORM
               </button>
             </div>
           </div>
+         
        
         </form>
 
-        <div className="mt-[70px] text-center">
+        <div className=" mt-[25px] tablet:mt-[70px] text-center">
           <Image src="/img/logo.png" alt="Arizona Interior Construction Logo" width={246} height={168} className='mx-auto mb-[45px]' />
           <div className="flex justify-center space-x-4 mt-4">
             <a href="#" className="text-gray-400 hover:text-gray-600">
