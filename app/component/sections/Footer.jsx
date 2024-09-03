@@ -1,8 +1,10 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { useSiteConfig } from '@/app/siteConfigContext';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 const ContactFormFooter = () => {
   const [name, setName] = useState('');
@@ -12,17 +14,31 @@ const ContactFormFooter = () => {
   const [consent, setConsent] = useState(false);
   const [newsletter, setNewsletter] = useState(false);
   const config = useSiteConfig();
+  const recaptchaRef = useRef();
 
 
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!recaptchaValue) {
+      alert("Please complete the reCAPTCHA");
+      return;
+    }
     // Here you would typically send the form data to your server
-    console.log('Form submitted:', { name, email, message });
-    // Reset form after submission
+    // Include the recaptchaValue in your form submission
+    console.log('Form submitted:', { name, email, message, recaptchaValue });
+    // Reset form and reCAPTCHA after submission
     setName('');
     setEmail('');
+    setPhone('');
     setMessage('');
+    setConsent(false);
+    setNewsletter(false);
+    recaptchaRef.current.reset();
+    setRecaptchaValue(null);
   };
 
   return (
@@ -103,6 +119,8 @@ const ContactFormFooter = () => {
               </label>
             </div>
           </div>
+
+         
             {/* submit button */}
             <div className="flex justify-between items-center pt-[15px] tablet:pt-0  hover:scale-105 transition duration-300 ease-in-out ">
               <button type="submit" className="bg-black text-white px-6 py-2 rounded whitespace-nowrap">
@@ -110,8 +128,14 @@ const ContactFormFooter = () => {
               </button>
             </div>
           </div>
-         
-       
+            {/* Add reCAPTCHA */}
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={config.siteKey}
+                onChange={handleRecaptchaChange}
+              />
+            </div>
         </form>
 
         <div className=" mt-[25px] tablet:mt-[70px] text-center">
