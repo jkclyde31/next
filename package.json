@@ -14,11 +14,13 @@
     "@builder.io/sdk": "^3.0.1",
     "@heroicons/react": "^2.1.5",
     "axios": "^1.7.7",
+    "cookie": "^0.6.0",
     "framer-motion": "^11.3.30",
     "fs.promises": "^0.1.2",
     "lucide-react": "^0.436.0",
     "next": "14.2.6",
     "react": "^18",
+    "react-cookie": "^7.2.0",
     "react-dom": "^18",
     "react-google-recaptcha": "^3.1.0",
     "react-google-recaptcha-v3": "^1.10.1"
