@@ -39,19 +39,19 @@ const ServicesSection = () => {
         {/* Images */}
         <div className="grid grid-cols-1 sx:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-[1095px]">
           <div className="relative mx-auto lg:mx-0 m-full max-w-full">
-            <Image src="/img/services/image1.png" alt="Kitchen Remodeling" width={360} height={486} class="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
+            <Image src="/img/services/image1.png" alt="Kitchen Remodeling" width={360} height={486} className="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
             <div className="absolute bottom-2 lg:bottom-[-35px] h-[69px] w-full max-w-[250px] left-1/2 transform -translate-x-1/2 bg-black text-white flex justify-center items-center">
               Kitchen Remodeling
             </div>
           </div>
           <div className="relative mx-auto lg:mx-0">
-            <Image src="/img/services/image2.png" alt="Bathroom Remodeling" width={360} height={486} class="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
+            <Image src="/img/services/image2.png" alt="Bathroom Remodeling" width={360} height={486} className="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
             <div className="absolute bottom-2 lg:bottom-[-35px] h-[69px] w-full max-w-[250px] left-1/2 transform -translate-x-1/2 bg-black text-white flex justify-center items-center">
               Bathroom Remodeling
             </div>
           </div>
           <div className="relative mx-auto lg:mx-0">
-            <Image src="/img/services/image3.png" alt="Repair Needs" width={360} height={486} class="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
+            <Image src="/img/services/image3.png" alt="Repair Needs" width={360} height={486} className="hover:brightness-75 hover:contrast-125 transition-all duration-300"/>
             <div className="absolute bottom-2 lg:bottom-[-35px] h-[69px] w-full max-w-[250px] left-1/2 transform -translate-x-1/2 bg-black text-white flex justify-center items-center">
               Repair Needs
             </div>
