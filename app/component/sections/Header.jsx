@@ -4,8 +4,11 @@ import Image from 'next/image';
 import PrimaryButton from '../PrimaryButton';
 import Navbar from '../Navbar';
 import ProcessSteps from '../Steps';
+import { useSiteConfig } from '@/app/siteConfigContext';
 
 export default function Header() {
+  const config = useSiteConfig();
+
   return (
     <header className="bg-[url('/img/bgs/bg-banner.png')] bg-no-repeat bg-cover bg-left md:bg-center text-[#222] min-h-[900px] relative">
       <div className='max-w-[1720px] w-full mx-auto'>
@@ -36,13 +39,17 @@ export default function Header() {
               <div className="w-full max-w-[260px]">
                 <PrimaryButton text="FREE ESTIMATE" className="w-full max-w-full" width='266px'  href="/contact#content"/>
               </div>
-              <div className="left flex justify-between items-center max-w-[190px] w-full hover:scale-105 transition duration-300 ease-in-out ">
-                <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
-                <div>
-                  <p className='font-nunito text-[14px]'>Call Us Now</p>
-                  <p className='font-roboto text-[18px]'>602-509-1242</p>
-                </div>
-              </div>
+
+              {/* left button */}
+              <a href={`tel:${config.phone}`} className="left flex justify-between items-center max-w-[190px] w-full hover:scale-105 transition duration-300 ease-in-out ">
+                  <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
+                  <div>
+                      <p className='font-nunito text-[14px]'>Call Us Now</p>
+                      <p className='font-roboto text-[18px]'>602-509-1242</p>
+                  </div>
+                </a>
+           
+
             </div>
 
           </div>

@@ -1,8 +1,11 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import PrimaryButton from '../PrimaryButton';
+import { useSiteConfig } from '@/app/siteConfigContext';
 
 const ServicesSection = () => {
+  const config = useSiteConfig();
   return (
     <section className="bg-[url('/img/bgs/bg-services.png')] bg-no-repeat bg-cover bg-center py-5 tablet:py-16">
       <div className="container mx-auto px-4 max-w-[1720px] w-full">
@@ -26,13 +29,13 @@ const ServicesSection = () => {
               <div className="w-full max-w-[260px]">
                 <PrimaryButton text="MORE SERVICES" className="w-full " width='266px'  href="/services#content"/>
               </div>
-            <div className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
+            <a href={`tel:${config.phone}`} className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>
                 <p className='font-roboto text-[18px] whitespace-nowrap'>602-509-1242</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 

@@ -1,7 +1,9 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./component/sections/Header";
 import Footer from "./component/sections/Footer";
+import { SiteConfigProvider } from "./siteConfigContext";
 // import ScrollToContent from "./component/ScrollToContent";
 
 
@@ -15,11 +17,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <SiteConfigProvider>
+
       <body className={inter.className}>
         <Header/>
           {children}
         <Footer/>
         </body>
+      </SiteConfigProvider>
+
     </html>
   );
 }

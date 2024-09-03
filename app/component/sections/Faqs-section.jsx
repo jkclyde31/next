@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PrimaryButton from '../PrimaryButton';
+import { useSiteConfig } from '@/app/siteConfigContext';
+
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,6 +51,8 @@ const FAQItem = ({ question, answer }) => {
 };
 
 const FAQKitchenSection = () => {
+  const config = useSiteConfig();
+
   const faqs = [
     {
       question: "How much does it cost to install a kitchen countertop?",
@@ -90,13 +94,13 @@ const FAQKitchenSection = () => {
               <div className="w-full max-w-full tablet:max-w-[260px]">
                 <PrimaryButton text="VIEW ALL" className="w-full " width='266px'  href="/services#content"/>
               </div>
-            <div className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
+            <a href={`tel:${config.phone}`} className="left flex justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
               <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
               <div>
                 <p className='font-nunito text-[14px]'>Call Us Now</p>
                 <p className='font-roboto text-[18px] whitespace-nowrap'>602-509-1242</p>
               </div>
-            </div>
+            </a>
           </div>
 
 

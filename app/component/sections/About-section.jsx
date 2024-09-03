@@ -1,8 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
+import { useSiteConfig } from '@/app/siteConfigContext';
+
 
 const AboutSection = () => {
+  const config = useSiteConfig();
+
   return (
     <section className="text-[#444444]" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center">
@@ -22,13 +27,13 @@ const AboutSection = () => {
               <div className="w-full max-w-[260px]">
                 <PrimaryButton text="GET A QUOTE" className="w-full " width='266px'  href="/contact#content"/>
               </div>
-              <div className="left flex  justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
+              <a href={`tel: ${config.phone}`} className="left flex  justify-between items-center max-w-[190px] w-full  hover:scale-105 transition duration-300 ease-in-out ">
                 <Image src="/img/icons/phone.png" alt="Phone Icon" width={57} height={57} />
                 <div>
                   <p className='font-nunito text-[14px]'>Call Us Now</p>
                   <p className='font-roboto text-[18px] whitespace-nowrap'>602-509-1242</p>
                 </div>
-              </div>
+              </a>
             </div>
 
 
