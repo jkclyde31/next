@@ -175,6 +175,7 @@ const ContactFormFooter = () => {
         </div>
       </div>
 
+      {/* MID */}
         <footer className="mt-12 mb-[30px] max-w-[730px] w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
@@ -183,19 +184,20 @@ const ContactFormFooter = () => {
                 {config.address}
               </p>
             </div>
-            <div>
+
+            <a href={`tel:${config.phone}`}>
               <Phone className="h-6 w-6 mx-auto text-gray-400 mb-2" />
               <p className="text-sm text-gray-600">
                 {config.phone}
               </p>
-            </div>
-            <div>
+            </a>
+            <a href={`mailto:${config.email}`}>
               <Mail className="h-6 w-6 mx-auto text-gray-400 mb-2" />
               <p className="text-sm text-gray-600">
                {config.email}
                 
               </p>
-            </div>
+            </a>
           </div>
        
 
